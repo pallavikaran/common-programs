@@ -34,7 +34,6 @@ object FirstNonRepeatedCharacterFromString {
     }
   }
 
-
   private def getCharacterCount(inputString: String): Array[Int] = {
     val count: Array[Int] = Array.fill[Int](NumberOfCharacters)(0) //Creates array of 256 size and fills with 0
     for (i <- 0 until inputString.length) {
