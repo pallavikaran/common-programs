@@ -57,6 +57,4 @@ object CheckIfStringContainsOnlyNumbers {
       println(s"$inputString true")
     }
   }
-
-
 }
