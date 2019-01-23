@@ -7,9 +7,13 @@ object Palindrome {
   def main(args: Array[String]): Unit = {
 
     val inputString: String = "kayak"
+    val inputString2: String = "skyscanner"
 
     isPalindromeUsingStack(inputString)
+    isPalindromeUsingStack(inputString2)
+
     isPalindromeUsingStrings(inputString)
+    isPalindromeUsingStrings(inputString2)
 
     if(inputString.toCharArray.reverse.mkString == inputString){
       println("This is a palindrome")
@@ -17,6 +21,14 @@ object Palindrome {
     else{
       println("This is a NOT palindrome")
     }
+
+    if(inputString2.toCharArray.reverse.mkString == inputString){
+      println("This is a palindrome")
+    }
+    else{
+      println("This is a NOT palindrome")
+    }
+
   }
 
   def isPalindromeUsingStack(input: String): Unit = {
